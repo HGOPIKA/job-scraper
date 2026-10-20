@@ -36,19 +36,19 @@ LLM_API_KEY = (
 LLM_MODEL = os.environ.get("LLM_MODEL") or "gemini"
 
 # --- Search Configuration ---
-LINKEDIN_SEARCH_QUERIES = ["maths lecturer", "statistics lecturer", "maths teacher", "Maths assistant professor", "Maths professor"]
+LINKEDIN_SEARCH_QUERIES = ["Data analyst", "process data analyst", "Manufacturing data analyst", "Yield data analyst", "Reliability data analyst"]
 LINKEDIN_LOCATION = "Singapore"
 LINKEDIN_GEO_ID = 102454443      # Singapore: 102454443, Dubai: 100205264
 LINKEDIN_JOB_TYPE = "F" # F=Full-time, C=Contract, P=Part-time, T=Temporary, I=Internship
 LINKEDIN_JOB_POSTING_DATE = "r86400" # r86400=Past 24h, r604800=Past week
 LINKEDIN_F_WT = "1,2,3" # 1=Onsite, 2=Remote, 3=Hybrid (use "1,2,3" or [1, 2, 3] for all, or None for no filter)
 
-CAREERS_FUTURE_SEARCH_QUERIES = ["IT Support", "Full Stack Web Developer", "Application Support", "Cybersecurity Analyst", "fresher developer"]
-CAREERS_FUTURE_SEARCH_CATEGORIES = ["Information Technology"]
+CAREERS_FUTURE_SEARCH_QUERIES = ["Data analyst", "process data analyst", "Manufacturing data analyst", "Yield data analyst", "Reliability data analyst"]
+CAREERS_FUTURE_SEARCH_CATEGORIES = []
 CAREERS_FUTURE_SEARCH_EMPLOYMENT_TYPES = ["Full Time"]
 
 # --- Processing Limits ---
-SCRAPING_SOURCES = ["linkedin"] # "linkedin", "careers_future"
+SCRAPING_SOURCES = ["linkedin", "careers_future"] # "linkedin", "careers_future"
 JOBS_TO_SCORE_PER_RUN = 5
 JOBS_TO_CUSTOMIZE_PER_RUN = 1
 MAX_JOBS_PER_SEARCH = {
